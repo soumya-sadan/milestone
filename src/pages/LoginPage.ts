@@ -4,13 +4,14 @@ import { BasePage } from "../base/BasePage";
 export class LoginPage extends BasePage {
 
     constructor(page: Page) {
+        
         super(page);
     }
 
     // Locators
-    private usernameField = "#username";
-    private passwordField = "#password";
-    private loginButton = "#loginBtn";
+    private usernameField = "xpath=//input[@placeholder='Username']";
+    private passwordField = "xpath=//input[@placeholder='Password']";
+    private loginButton = "xpath=//button[@type='submit']";
     private errorMessage = ".error-msg";
 
     // Actions
@@ -32,7 +33,7 @@ export class LoginPage extends BasePage {
         await this.clickLoginButton();
     }
 
-    async getErrorMessage() {
-        return await this.getText(this.errorMessage);
-    }
+   // async getErrorMessage() {
+   //     return await this.getText(this.errorMessage);
+   // }
 }
