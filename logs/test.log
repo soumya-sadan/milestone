@@ -1,0 +1,31 @@
+2025-11-21 12:52:21 [INFO]: Starting Valid Login Test (CSV Data)
+2025-11-21 12:53:03 [INFO]: Starting Valid Login Test (CSV Data)
+2025-11-21 12:53:52 [INFO]: Starting Valid Login Test (CSV Data)
+2025-11-21 12:55:13 [INFO]: Starting Valid Login Test (CSV Data)
+2025-11-21 12:55:13 [INFO]: Using credentials → Username: password, Password: undefined
+2025-11-21 12:55:13 [INFO]: Navigating to URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2025-11-21 12:55:30 [INFO]: Performing login with user: password
+2025-11-21 12:55:30 [INFO]: Entering username: password
+2025-11-21 12:55:30 [INFO]: Typing "password" into: xpath=//input[@placeholder='Username']
+2025-11-21 12:55:33 [INFO]: Entering password: undefined
+2025-11-21 12:55:33 [INFO]: Typing "undefined" into: xpath=//input[@placeholder='Password']
+2025-11-21 12:56:00 [INFO]: Starting Valid Login Test (CSV Data)
+2025-11-21 12:56:00 [INFO]: Using credentials → Username: password, Password: undefined
+2025-11-21 12:56:00 [INFO]: Navigating to URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2025-11-21 12:56:10 [INFO]: Performing login with user: password
+2025-11-21 12:56:10 [INFO]: Entering username: password
+2025-11-21 12:56:10 [INFO]: Typing "password" into: xpath=//input[@placeholder='Username']
+2025-11-21 12:56:12 [INFO]: Entering password: undefined
+2025-11-21 12:56:12 [INFO]: Typing "undefined" into: xpath=//input[@placeholder='Password']
+2025-11-21 12:57:17 [INFO]: Starting Valid Login Test (CSV Data)
+2025-11-21 12:57:17 [INFO]: Using credentials → Username: Admin, Password: admin123
+2025-11-21 12:57:17 [INFO]: Navigating to URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2025-11-21 12:57:24 [INFO]: Performing login with user: Admin
+2025-11-21 12:57:24 [INFO]: Entering username: Admin
+2025-11-21 12:57:24 [INFO]: Typing "Admin" into: xpath=//input[@placeholder='Username']
+2025-11-21 12:57:27 [INFO]: Entering password: admin123
+2025-11-21 12:57:27 [INFO]: Typing "admin123" into: xpath=//input[@placeholder='Password']
+2025-11-21 12:57:27 [INFO]: Clicking Login button
+2025-11-21 12:57:27 [INFO]: Clicking element: xpath=//button[@type='submit']
+2025-11-21 12:57:35 [INFO]: Login submitted. Verifying dashboard URL...
+2025-11-21 12:57:35 [INFO]: Valid Login Test completed successfully.

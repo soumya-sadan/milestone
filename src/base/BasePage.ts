@@ -1,4 +1,6 @@
 import { Page, expect } from "@playwright/test";
+import { logger } from "../utils/logger";
+
 
 export class BasePage {
     protected page: Page;
@@ -8,23 +10,28 @@ export class BasePage {
     }
 
     async navigateTo(url: string) {
-        await this.page.goto(url);
-    }
+    logger.info(`Navigating to URL: ${url}`);
+    await this.page.goto(url);
+}
 
-    async click(selector: string) {
-        await this.page.waitForSelector(selector);
-        await this.page.click(selector);
-    }
+async click(selector: string) {
+    logger.info(`Clicking element: ${selector}`);
+    await this.page.waitForSelector(selector);
+    await this.page.click(selector);
+}
 
-    async type(selector: string, text: string) {
-        await this.page.waitForSelector(selector);
-        await this.page.fill(selector, text);
-    }
+async type(selector: string, text: string) {
+    logger.info(`Typing "${text}" into: ${selector}`);
+    await this.page.waitForSelector(selector);
+    await this.page.fill(selector, text);
+}
 
-    async getText(selector: string): Promise<string> {
-        await this.page.waitForSelector(selector);
-        return await this.page.textContent(selector) || "";
-    }
+async getText(selector: string): Promise<string> {
+    logger.info(`Getting text from: ${selector}`);
+    await this.page.waitForSelector(selector);
+    return await this.page.textContent(selector) || "";
+}
+
 
     async wait(seconds: number) {
         await this.page.waitForTimeout(seconds * 1000);
@@ -39,4 +46,9 @@ export class BasePage {
             path: `./reports/screenshots/${name}.png`
         });
     }
+
+    getPage() {
+    return this.page;
+}
+
 }
